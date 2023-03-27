@@ -8,11 +8,11 @@ import java.util.Random;
 class ToyStore {
     List<Toy> toys = new ArrayList<>();
 
-    public void addToy(Toy toy) {
+    public void addToy(Toy toy) {  // функция добавления игрушки
         toys.add(toy);
     }
 
-    public void updateToyWeight(int id, int weight) {
+    public void updateToyWeight(int id, int weight) {  // функция для изменения шанса выпадения игрушки
         for (Toy toy : toys) {
             if (toy.id == id) {
                 toy.weight = weight;
@@ -21,7 +21,7 @@ class ToyStore {
         }
     }
 
-    public Toy drawToy() {
+    public Toy drawToy() {  // функция розыгрыша игрушки
         List<Integer> weights = new ArrayList<>();
         int totalWeight = 0;
         for (Toy toy : toys) {

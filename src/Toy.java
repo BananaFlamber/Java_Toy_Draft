@@ -1,7 +1,7 @@
 class Toy {
     int id;
     String name;
-    int weight; // частота выпадения в процентах
+    int weight;
 
     public Toy(int id, String name, int weight) {
         this.id = id;
