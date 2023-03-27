@@ -1,8 +1,7 @@
-class Toy implements Toy_interface
-{
-    this.id = id;
-    this.name = name;
-    this.weight = weight;
+class Toy {
+    int id;
+    String name;
+    int weight; // частота выпадения в процентах
 
     public Toy(int id, String name, int weight) {
         this.id = id;
@@ -10,4 +9,3 @@ class Toy implements Toy_interface
         this.weight = weight;
     }
 }
-
